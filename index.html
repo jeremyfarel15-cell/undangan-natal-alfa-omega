@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#082b20">
+<title>Undangan Natal | GBT Alfa Omega Sebangau Kuala</title>
+<style>
+:root{--green:#082b20;--green2:#104331;--gold:#d8b56a;--cream:#f7f0df}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:#061d17;color:var(--cream);font-family:Georgia,'Times New Roman',serif}
+.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:34px 20px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 35%,#1b553d 0,#0b3024 48%,#061d17 100%)}
+.hero:before,.hero:after{content:"✦";position:absolute;color:#d8b56a55;font-size:150px;animation:twinkle 4s ease-in-out infinite}
+.hero:before{top:7%;left:8%}.hero:after{right:8%;bottom:9%;font-size:95px;animation-delay:1.5s}
+@keyframes twinkle{50%{opacity:.25;transform:scale(.85)}}
+.frame{max-width:760px;width:100%;border:1px solid #d8b56a88;padding:42px 24px;position:relative;background:#06251c88;box-shadow:0 20px 80px #0006}
+.frame:before{content:"";position:absolute;inset:9px;border:1px solid #d8b56a44;pointer-events:none}
+.kicker{letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font:12px Arial,sans-serif}
+h1{font-size:clamp(42px,9vw,78px);line-height:.98;margin:24px 0 12px;color:#f5e7c4;font-weight:normal}
+.subtitle{font:13px Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:#e4d4ae}
+.star{font-size:30px;color:var(--gold);margin:18px}
+button,.button{border:1px solid var(--gold);background:var(--gold);color:#10291f;padding:13px 22px;font: bold 12px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;text-decoration:none;display:inline-block;margin-top:22px}
+section{padding:76px 20px;text-align:center}
+.content{max-width:760px;margin:auto}
+h2{font-size:clamp(30px,6vw,48px);font-weight:normal;color:#f5e7c4;margin:12px 0}
+.gold{color:var(--gold)}.verse{font-size:20px;line-height:1.7;font-style:italic;color:#e7dcc3}
+.small{font:13px/1.8 Arial,sans-serif;color:#d2cbb9}
+.details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:30px auto;max-width:650px}
+.detail{border:1px solid #d8b56a66;padding:22px 12px;background:#0c3025}
+.detail b{display:block;color:var(--gold);font:11px Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase;margin-bottom:10px}
+.detail span{font-size:18px}
+.countdown{display:flex;justify-content:center;gap:12px;margin:28px 0;flex-wrap:wrap}
+.countdown div{min-width:72px;padding:14px 10px;border:1px solid #d8b56a66;background:#0c3025}
+.countdown strong{display:block;font-size:28px;color:var(--gold);font-weight:normal}
+.countdown small{font:10px Arial,sans-serif;letter-spacing:.1em}
+footer{padding:45px 20px;text-align:center;background:#04150f;border-top:1px solid #d8b56a55}
+@media(max-width:520px){.details{grid-template-columns:1fr}.frame{padding:34px 18px}.hero:before{font-size:90px}}
+</style>
+</head>
+<body>
+<header class="hero">
+ <div class="frame">
+  <div class="kicker">Undangan Perayaan Natal</div>
+  <div class="star">✧ ✦ ✧</div>
+  <div class="subtitle">GBT Alfa Omega Sebangau Kuala</div>
+  <h1>Terang di<br><span class="gold">Tengah Kegelapan</span></h1>
+  <p class="verse">“Bangsa yang berjalan di dalam kegelapan telah melihat terang yang besar.”</p>
+  <p class="small">Yesaya 9:1</p>
+  <a class="button" href="#undangan">Buka Undangan</a>
+ </div>
+</header>
+<section id="undangan">
+ <div class="content">
+  <div class="kicker">Damai Sejahtera Kristus</div>
+  <h2>Shalom!</h2>
+  <p class="verse">Dengan penuh sukacita, kami mengundang Bapak, Ibu, Saudara/i serta seluruh jemaat untuk hadir dalam perayaan Natal bersama.</p>
+  <div class="star">✦</div>
+  <h2 class="gold">Terang di Tengah Kegelapan</h2>
+  <p class="small">Kiranya terang kasih Kristus menerangi hati dan kehidupan kita, membawa pengharapan, damai, serta sukacita bagi semua.</p>
+  <div class="details">
+   <div class="detail"><b>Hari / Tanggal</b><span>Kamis, 10 Desember 2026</span></div>
+   <div class="detail"><b>Waktu</b><span>Akan diinformasikan</span></div>
+   <div class="detail" style="grid-column:1/-1"><b>Tempat</b><span>Sebangau Kuala, Mekar Jaya</span></div>
+  </div>
+  <div class="kicker">Menuju Perayaan Natal</div>
+  <div class="countdown" aria-label="Hitung mundur">
+   <div><strong id="days">--</strong><small>HARI</small></div>
+   <div><strong id="hours">--</strong><small>JAM</small></div>
+   <div><strong id="minutes">--</strong><small>MENIT</small></div>
+   <div><strong id="seconds">--</strong><small>DETIK</small></div>
+  </div>
+  <p class="small">Merupakan sukacita bagi kami apabila Bapak, Ibu, Saudara/i dapat hadir dan bersekutu bersama.</p>
+  <p class="verse gold">Tuhan Yesus memberkati.</p>
+ </div>
+</section>
+<footer>
+ <div class="kicker">GBT Alfa Omega Sebangau Kuala</div>
+ <h2 style="font-size:27px">Selamat Natal</h2>
+ <p class="small">“Terang Kristus membawa pengharapan bagi dunia.”</p>
+</footer>
+<script>
+const target = new Date('2026-12-10T00:00:00+07:00').getTime();
+function tick(){
+ const diff=target-Date.now();
+ if(diff<=0){['days','hours','minutes','seconds'].forEach(id=>document.getElementById(id).textContent='0');return}
+ const vals={days:Math.floor(diff/86400000),hours:Math.floor(diff%86400000/3600000),minutes:Math.floor(diff%3600000/60000),seconds:Math.floor(diff%60000/1000)};
+ Object.entries(vals).forEach(([id,v])=>document.getElementById(id).textContent=String(v).padStart(2,'0'));
+}
+tick();setInterval(tick,1000);
+</script>
+</body></html>
